@@ -1,5 +1,5 @@
 @import url(fontawesome-all.min.css);
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700,900");
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
 
 /*
 	Phantom by HTML5 UP
@@ -35,6 +35,7 @@ body {
 
 ol, ul {
 	list-style: none;
+	
 }
 
 blockquote, q {
@@ -70,6 +71,7 @@ input, select, textarea {
 	-webkit-appearance: none;
 	-ms-appearance: none;
 	appearance: none;
+
 }
 
 /* Basic */
@@ -138,6 +140,27 @@ input, select, textarea {
 			}
 
 		}
+		@media screen and (max-width: 992px) {
+
+			body, input, select, textarea {
+				font-size: 10pt;
+			}
+
+		}
+		@media screen and (max-width: 768px) {
+
+			body, input, select, textarea {
+				font-size: 8pt;
+			}
+
+		}
+		@media screen and (max-width: 576px) {
+
+			body, input, select, textarea {
+				font-size: 6pt;
+			}
+
+		}
 
 	a {
 		-moz-transition: border-bottom-color 0.2s ease, color 0.2s ease;
@@ -145,13 +168,13 @@ input, select, textarea {
 		-ms-transition: border-bottom-color 0.2s ease, color 0.2s ease;
 		transition: border-bottom-color 0.2s ease, color 0.2s ease;
 		text-decoration: none;
-		color: #585858;
-		border-bottom: dotted 1px rgba(88, 88, 88, 0.5);
+		color: #900C3F ;
+		/* border-bottom: dotted 1px rgba(88, 88, 88, 0.5); */
 	}
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #f2849e !important;
+			color: #FFC300 !important;
 		}
 
 	strong, b {
@@ -209,6 +232,10 @@ input, select, textarea {
 
 	h2 {
 		font-size: 1.1em;
+		
+	}
+	.socialMedia {
+		color: #FF5733;
 	}
 
 	h3 {
@@ -2040,7 +2067,7 @@ input, select, textarea {
 /* Icons */
 
 	ul.icons {
-		cursor: default;
+		cursor: pointer;
 		list-style: none;
 		padding-left: 0;
 		margin: -1em 0 2em -1em;
@@ -2050,6 +2077,7 @@ input, select, textarea {
 			display: inline-block;
 			padding: 1em 0 0 1em;
 		}
+
 
 /* Form */
 
@@ -3166,7 +3194,8 @@ input, select, textarea {
 
 	#footer {
 		padding: 5em 0 6em 0 ;
-		background-color: #f6f6f6;
+		background-color: silver;
+		border-radius: 50px 20px;
 	}
 
 		#footer > .inner {
@@ -3182,6 +3211,7 @@ input, select, textarea {
 			-webkit-flex-direction: row;
 			-ms-flex-direction: row;
 			flex-direction: row;
+		
 		}
 
 			#footer > .inner > * > :last-child {
@@ -3204,11 +3234,12 @@ input, select, textarea {
 				margin-top: 5em;
 				list-style: none;
 				font-size: 0.8em;
-				color: rgba(88, 88, 88, 0.5);
+				color: black;
+			
 			}
 
 				#footer > .inner .copyright a {
-					color: inherit;
+					color: goldenrod;
 				}
 
 				#footer > .inner .copyright li {
@@ -3217,12 +3248,14 @@ input, select, textarea {
 					line-height: 1;
 					padding: 0 0 0 1em;
 					margin: 0 0 0 1em;
+					color:goldenrod;
 				}
 
 					#footer > .inner .copyright li:first-child {
 						border-left: 0;
 						padding-left: 0;
 						margin-left: 0;
+						color:goldenrod;
 					}
 
 		@media screen and (max-width: 1280px) {
@@ -3281,7 +3314,7 @@ input, select, textarea {
 						-webkit-order: -1;
 						-ms-order: -1;
 						order: -1;
-						width: 100%;
+						width: 80%;
 						margin-left: 0;
 					}
 
@@ -3308,7 +3341,7 @@ input, select, textarea {
 					#footer > .inner .copyright li:first-child {
 						margin-top: 0;
 					}
-
+					
 		}
 
 /* Wrapper */
@@ -3326,4 +3359,22 @@ input, select, textarea {
 				padding: 0 1.25em;
 			}
 
+		}
+
+		.inner p{
+			font-family: 'Times New Roman', Times, serif;
+			font-size: 1rem;
+			color:black;
+		}
+
+		#main .inner .image img{
+			height: 50%;
+			width: 50%;
+			display: block;
+			margin-left: auto;
+			margin-right: auto 
+			
+		}
+		#main{
+			background-color: lightgrey;
 		}
